@@ -15,9 +15,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
     /*
-    UAGithubEngine *engine = [[UAGithubEngine alloc] initWithUsername:@"aUser" password:@"aPassword" withReachability:YES];
+    UAGithubEngine *engine = [[UAGithubEngine alloc] initWithUsername:@"username" password:@"password" withReachability:YES];
     
     [engine repositoriesWithSuccess:^(id response) {
         NSLog(@"Got an array of repos: %@", response);
@@ -25,11 +24,12 @@
         NSLog(@"Oops: %@", error);
     }];
     
-    [engine user:@"this_guy" isCollaboratorForRepository:@"UAGithubEngine" success:^(BOOL collaborates) {
+    [engine user:@"andrerod" isCollaboratorForRepository:@"UAGithubEngine" success:^(BOOL collaborates) {
         NSLog(@"%d", collaborates);
     } failure:^(NSError *error){
         NSLog(@"D'oh: %@", error);
-    }];*/
+    }];
+     */
 }
 
 - (void)awakeFromNib{
