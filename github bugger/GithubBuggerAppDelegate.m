@@ -37,6 +37,18 @@
     [statusItem setMenu:statusMenu];
     [statusItem setTitle:@"Status"];
     [statusItem setHighlightMode:YES];
+
+    NSMenuItem * quitStatusItem = [statusMenu itemWithTitle:@"Quit"];
+    [quitStatusItem setTarget:self];
+    [quitStatusItem setAction:@selector(quitAction:)];
 }
 
+- (IBAction)quitAction:(id)sender {
+    [NSApp terminate:sender];
+}
+
+- (IBAction)settingsAction:(id)sender {
+    NSWindow * settingsWindow = [self window]; // Get the window to open
+    [settingsWindow makeKeyAndOrderFront:nil];
+}
 @end

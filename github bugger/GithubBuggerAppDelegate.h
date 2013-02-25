@@ -14,6 +14,10 @@
     NSStatusItem * statusItem;
 }
 
+@property (weak) IBOutlet NSMenuItem *quit;
 @property (assign) IBOutlet NSWindow *window;
+
+- (IBAction)quitAction:(id)sender;
+- (IBAction)settingsAction:(id)sender;
 
 @end
